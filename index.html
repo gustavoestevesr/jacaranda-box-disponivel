@@ -90,13 +90,6 @@
             padding: 10px;
             text-align: center;
         }
-        /* Clear floats after the columns */
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
         
         .container-description {
             padding: 50px;
@@ -118,6 +111,7 @@
             margin: 5px;
             font-size: 1.2rem;
             text-align: justify;
+            font-weight: 400;
         }
         
         spam {
@@ -182,10 +176,14 @@
             flex-wrap: wrap;
         }
         
-        .colum {
+        .column {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        
+        .row {
+            margin: auto;
         }
         
         @media screen and (max-width: 600px) {
@@ -214,8 +212,11 @@
             summary {
                 font-size: 18px;
             }
-            #ul-li {
+            li {
                 margin-right: 25px;
+            }
+            #ul-li {
+                margin-right: 30px;
             }
         }
     </style>
@@ -240,18 +241,18 @@
         <p id="title" style=" font-weight: 400; width: 100%; text-align: center; margin-top: 60px">Como Funciona?
         </p>
 
-        <div class="row" style="margin: auto; max-width: 700px;">
-            <div class="colum">
+        <div class="row">
+            <div class="column">
                 <p style="background-color: rgb(0, 103, 34); color: white; font-weight: bold; width: 60px; height: 60px; padding: 20px; padding-left: 25px; padding-right: 25px; border-radius: 100px; text-align: center; margin: 0;">
                     1</p>
                 <p>Escolha entre a <strong>Assinatura Mensal</strong> ou a <strong>Unidade Caixa de Produtos Jacarandá</strong>.</p>
             </div>
-            <div class="colum">
+            <div class="column">
                 <p style="background-color: rgb(0, 103, 34); color: white; font-weight: bold; width: 60px; height: 60px;  padding: 20px; padding-left: 25px; padding-right: 25px; border-radius: 100px; text-align: center; margin: 0; margin-top: 20px;">
                     2</p>
                 <p><strong>Realize o pagamento</strong> através do <strong>Mercado Pago</strong> ou <strong>PicPay.</strong></p>
             </div>
-            <div class="colum">
+            <div class="column">
                 <p style="background-color: rgb(0, 103, 34); color: white; font-weight: bold; width: 60px; height: 60px;  padding: 20px; padding-left: 25px; padding-right: 25px; border-radius: 100px; text-align: center; margin: 0; margin-top: 20px;">
                     3</p>
                 <p>Pronto! <strong>Aguarde a sua caixa de produtos
@@ -259,24 +260,17 @@
             </div>
         </div>
 
-        <div class="row" style="margin: auto; max-width: 700px;">
+        <div class="row" >
 
             <p id="title"
                 style=" font-weight: 400; width: 100%; text-align: center; margin-top: 60px; margin-bottom: 0px;">
-                Caixa de
-                produtos Jacarandá?
+                Caixa de Assinatura da
+                Jacarandá
             </p>
 
-            <img src="caixa-removebg.png" style="height: 500px; margin: auto; display: block;">
+            <br>
 
-            <p style=" font-weight: 400; text-align: justify; width: 100%;">
-                <strong>SURPRESA!  Todo mês produtos variados</strong>. Eles podem ser produtos que proporcionam um momento precioso de <strong>
-                    autocuidado,
-                    pausa
-                    e conexão.
-                </strong>
-                </p>
-                <p style=" font-weight: 400; text-align: justify; width: 100%; margin-top: 0;">
+                <p style=" font-weight: 400; text-align: center; width: 100%; margin-top: 0;">
                     <strong>
                     Produtos para cuidar
                     de você e da
@@ -285,29 +279,16 @@
                 </strong> na sua porta<strong> mensalmente</strong>, em <strong>embalagens biodegradáveis</strong>,
                     <strong>recicláveis</strong> ou <strong>compostáveis</strong>.
                 </p>
-                <p style=" font-weight: 400; text-align: center; width: 100%; margin-top: 0;">
-                    Para <strong>
-                    mudanças de
-                    hábitos
-                </strong> que
-                    <strong>
-                    preservam você</strong> e o <strong>
-                    planeta
-                    Terra.
-                </strong></p>
 
                 <p style=" font-weight: 400; text-align: center; width: 100%; margin-top: 0;">
                     Tudo isso <strong>
                     sem ter
                     que sair de casa
-                </strong>
+                </strong> e o <strong>
+                    frete de envio</strong> para <strong>qualquer cidade do brasil</strong> fica por <strong>nossa conta!
+                    </strong>
                 </p>
 
-                <p style=" font-weight: 400; text-align: center; width: 100%; margin-top: 0;">
-                    e <strong>
-                    Frete Grátis!
-                </strong>
-                </p>
             </div>
 
             <p id="title" style=" font-weight: 400;  text-align: center; margin-top: 60px">Missão e Valores
@@ -349,28 +330,43 @@
                 <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/caixa.jpeg" style="width: 300px; border-radius: 50px;">
                 <div class="div">
                     <h2 style="margin-left: 25px;">Caixa Jacarandá</h2>
-                    <p class="design-description">Assinatura de uma caixa surpresa mensalmente na sua porta, com produtos de uso diário e a quantidade ideal para o consumo até a próxima caixa chegar.
-                        <p class="design-description">Uma caixa surpresa na sua porta com produtos de uso diário e a quantidade ideal para o consumo até a próxima compra de caixa.
+                    <p class="design-description">Uma ECO caixa mensalmente na sua porta, com produtos de uso diário para o mês!</p>
+                    <ul>
+                        <li>Sem desperdício.</li>
+                        <li>Feitos de ingredientes naturais e orgânicos.</li>
+                        <li>Embalagens biodegradáveis ou reutilizáveis.</li>
+                        <li>Causar menos impacto negativo ao meio ambiente com suas rotinas.</li>
+                    </ul>
+                    <p class="design-description">Uma forma de ter na porta da sua casa todos os produtos essenciais para cuidado da casa e do corpo. orgânicos, artesanais e naturais!</p>
                 </div>
             </div>
 
             <!-- FOTO 2 -->
             <div class="design">
                 <div class="div">
-                    <h2 style="margin-left: 25px;">Bucha Vegetal</h2>
-                    <p class="design-description">São uma opção mais sustentável do que a esponja de cozinha e de banho. Por ser biodegradável e compostável não gera impacto ao meio ambiente.<br><br>Ela realiza uma esfoliação natural, pois o atrito das fibras naturais sobre a pele
-                        promove a  retirada de impurezas e células mortas. Por ser um produto artesanal as medidas podem variar.</p>
+                    <h2 style="margin-left: 25px;">Sabonete Multifuncional</h2>
+                    <p class="design-description">Uma mesma barra para seus cabelos, rosto e corpo feita com óleos e manteigas vegetais prensados a frio e óleos essenciais, para tratar e cuidar da pele e cabelos sem agredir e sem produtos químicos estranhos. Cada mês um novo e exclusivo
+                        pra você experimentar os benefícios de diferentes óleos e plantas.</p>
                 </div>
-                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/ecopad 1.jpeg" style="height: 250px; border-radius: 50px;">
+                <img src="sabao multifuncional.jpeg" style="width: 300px; border-radius: 50px;">
             </div>
 
             <!-- FOTO 3 -->
             <div class="design">
-                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/ecopad 2.jpeg" style="border-radius: 50px; height: 250px;">
+                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/ecopad 1.jpeg" style="height: 250px; border-radius: 50px;">
+                <div class="div">
+                    <h2 style="margin-left: 25px;">Bucha Vegetal</h2>
+                    <p class="design-description">São uma opção mais sustentável do que a esponja de cozinha e de banho. Por ser biodegradável e compostável não gera impacto ao meio ambiente.<br><br>Ela realiza uma esfoliação natural, pois o atrito das fibras naturais sobre a pele
+                        promove a  retirada de impurezas e células mortas. Por ser um produto artesanal as medidas podem variar.</p>
+                </div>
+            </div>
+
+            <!-- FOTO 4 -->
+            <div class="design">
                 <div class="descricao-foto1">
                     <div class="div">
                         <h2 style="margin-left: 25px;">Disco de crochê ecológico</h2>
-                        <p class="design-description">Substitui perfeitamente o algodão nos cuidados do dia a dia. Maneiras de usar:
+                        <p class="design-description">Substitui perfeitamente o algodão nos cuidados do dia a dia e não é descartável! Podendo ser levada e reutilizada por muito tempo. Maneiras de usar:
                         </p>
                     </div>
                     <ul id="ul-li">
@@ -384,17 +380,44 @@
                         </li>
                     </ul>
                 </div>
+                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/ecopad 2.jpeg" style="border-radius: 50px; height: 250px;">
             </div>
 
-            <!-- FOTO 4 -->
+            <!-- FOTO 5 -->
             <div class="design">
+                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/sabonete coco.jpeg" style="width:300px; border-radius: 50px;">
                 <div class="div">
                     <h2 style="margin-left: 25px;">Sabão em pó multiuso</h2>
-                    <p class="design-description">Feito de óleo de coco orgânico e bicarbonato de sódio, esse é um produto multiuso e será seu maior aliado pra limpar a casa inteira. Perfeito para lavar roupas, limpar vidros, lavar louça, limpar fogão etc <br><br>Enfim, um multiuso
-                        completo com instruções para cada finalidade, que não agride você, nem a sua família e nem o planeta.</p>
+                    <p class="design-description">Feito de óleo de coco orgânico e bicarbonato de sódio, esse é um produto multiuso e será seu maior aliado pra limpar a casa inteira. Perfeito para lavar roupas, limpar vidros, lavar louça, limpar fogão... Enfim, um multiuso completo
+                        com instruções para cada finalidade, que não agride você, nem a sua família e nem o planeta.</p>
+                    <h2 style="margin-left: 25px;">Sabão de coco em barra</h2>
+                    <p class="design-description">Para lavar a louça ou o que for necessário na sua casa!</p>
                 </div>
-                <img src="https://cdn.awsli.com.br/1746/1746851/arquivos/sabonete coco.jpeg" style="width:300px; border-radius: 50px;">
             </div>
+
+            <!-- FOTO 6 -->
+            <div class="design">
+                <div class="div">
+                    <h2 style="margin-left: 25px;">SURPRESA</h2>
+                    <p class="design-description">Todo mês, um produto variados. Eles podem ser produtos que proporcionam um momento precioso de autocuidado, pausa e conexão. (Ex: Sais de ervas, blend de argilas, condicionador e etc).</p>
+                </div>
+                <img src="Foto Surpresa.jpeg" style="width:300px; border-radius: 50px;">
+            </div>
+
+            <br>
+
+            <p style=" font-weight: 400; text-align: center; width: 100%; margin: 0; margin-top: 10px; font-size: 2rem;">
+                Para <strong>
+                mudanças de
+                hábitos
+            </strong> que
+                <strong>
+                preservam você</strong> e o <strong>
+                planeta
+                Terra.
+            </strong></p>
+
+            <br>
 
             <p id="title">Conheça os nossos planos:</p>
 
@@ -403,11 +426,11 @@
             <div class="div-cards">
                 <div class="w3-third w3-margin-bottom" style="width: 360px;">
                     <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                        <li class=" w3-xlarge w3-padding-32" style="background-color: rgb(0,103,34); text-align: center; color: white;">Mensal
+                        <li class=" w3-xlarge w3-padding-32" style="background-color: rgb(0,103,34); text-align: center; color: white; margin-right: 5px;">Mensal
                         </li>
                         <li class="w3-padding-16">
                             <p style="color: rgb(0,103,34); text-align: center; font: 22px; margin-bottom: 30px;">Assinatura Caixa Jacarandá</p>
-                            <h2 class="w3-wide" style="color: rgb(0,103,34); text-align: center;">R$165</h2>
+                            <h2 class="w3-wide" style="color: rgb(0,103,34); text-align: center;">R$145</h2>
                             <p style="text-align: center; margin-top: 0"><span class="w3-opacity" style="color: rgb(0,103,34); text-align: center;">por mês</span></p>
                             <a target="_blank" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380847af0a720017b09c875b11147"><button
                                 style="background-color: rgb(0, 79, 103); color: white; width: 300px;">Mercado Pago</button></a>
@@ -420,11 +443,11 @@
                 <!-- CARD 2 - COMPRA POR UNIDADE -->
                 <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="width: 360px;">
-                        <li class=" w3-xlarge w3-padding-32 " style="background-color: rgb(0,103,34); text-align: center; color: white; ">Unidade
+                        <li class=" w3-xlarge w3-padding-32 " style="background-color: rgb(0,103,34); text-align: center; color: white; margin-right: 5px;">Unidade
                         </li>
                         <li class="w3-padding-16 ">
                             <p style="color: rgb(0,103,34); text-align: center; font: 22px; margin-bottom: 30px; ">Unidade Caixa Jacarandá</p>
-                            <h2 class="w3-wide " style="color: rgb(0,103,34); text-align: center; ">R$165</h2>
+                            <h2 class="w3-wide " style="color: rgb(0,103,34); text-align: center; ">R$145</h2>
                             <p style="text-align: center; margin-top: 0 "><span class="w3-opacity " style="color: rgb(0,103,34); text-align: center; ">por unidade</span></p>
                             <a target="_blank " href="https://projetos-de-robotica-x.lojaintegrada.com.br/teste- "><button
                                 style="background-color: rgb(0, 79, 103); color: white; width: 300px;">Mercado Pago</button></a>
