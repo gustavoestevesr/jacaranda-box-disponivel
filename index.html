@@ -174,6 +174,8 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0;
         }
         
         .column {
@@ -184,6 +186,26 @@
         
         .row {
             margin: auto;
+        }
+        
+        .w3-ul,
+        .w3-third {
+            margin: auto;
+            display: block;
+            width: 400px;
+        }
+        
+        button {
+            width: 200px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .w3-ul,
+            .w3-third {
+                margin: auto;
+                display: block;
+                width: 400px;
+            }
         }
         
         @media screen and (max-width: 600px) {
@@ -424,7 +446,7 @@
             <!-- CARD 1 - COMPRA POR ASSINATURA -->
 
             <div class="div-cards">
-                <div class="w3-third w3-margin-bottom" style="width: 360px;">
+                <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-center w3-hover-shadow">
                         <li class=" w3-xlarge w3-padding-32" style="background-color: rgb(0,103,34); text-align: center; color: white; margin-right: 5px;">Mensal
                         </li>
@@ -433,16 +455,16 @@
                             <h2 class="w3-wide" style="color: rgb(0,103,34); text-align: center;">R$145</h2>
                             <p style="text-align: center; margin-top: 0"><span class="w3-opacity" style="color: rgb(0,103,34); text-align: center;">por mês</span></p>
                             <a target="_blank" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380847af0a720017b09c875b11147"><button
-                                style="background-color: rgb(0, 79, 103); color: white; width: 300px;">Mercado Pago</button></a>
+                                style="background-color: rgb(0, 79, 103); color: white; ">Mercado Pago</button></a>
                             <a target="_blank" href="https://picpay.me/jacarandara"><button
-                                style="background-color: rgb(0,103,34); color: white; width: 300px;">PicPay</button></a>
+                                style="background-color: rgb(0,103,34); color: white; ">PicPay</button></a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- CARD 2 - COMPRA POR UNIDADE -->
                 <div class="w3-third w3-margin-bottom">
-                    <ul class="w3-ul w3-border w3-center w3-hover-shadow" style="width: 360px;">
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
                         <li class=" w3-xlarge w3-padding-32 " style="background-color: rgb(0,103,34); text-align: center; color: white; margin-right: 5px;">Unidade
                         </li>
                         <li class="w3-padding-16 ">
@@ -450,9 +472,9 @@
                             <h2 class="w3-wide " style="color: rgb(0,103,34); text-align: center; ">R$145</h2>
                             <p style="text-align: center; margin-top: 0 "><span class="w3-opacity " style="color: rgb(0,103,34); text-align: center; ">por unidade</span></p>
                             <a target="_blank " href="https://projetos-de-robotica-x.lojaintegrada.com.br/teste- "><button
-                                style="background-color: rgb(0, 79, 103); color: white; width: 300px;">Mercado Pago</button></a>
+                                style="background-color: rgb(0, 79, 103); color: white; ">Mercado Pago</button></a>
                             <a target="_blank " href="https://picpay.me/barbara.jacaranda "><button
-                                    style="background-color: rgb(0,103,34); color: white; width: 300px;">PicPay</button></a>
+                                    style="background-color: rgb(0,103,34); color: white; ">PicPay</button></a>
                         </li>
                     </ul>
                 </div>
@@ -490,6 +512,12 @@
                         COMO FUNCIONA O FRETE?</summary>
                     <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">O frete de envio da caixa fica por nossa conta para qualquer cidade do Brasil.</p>
                 </details>
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        PRAZO DE ENVIO?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">Pedidos realizados a partir do dia 15 será enviado pelo método PAC Correios.</p>
+                </details>
+
 
             </div>
         </div>
