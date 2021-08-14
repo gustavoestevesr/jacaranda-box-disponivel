@@ -253,7 +253,12 @@
 
 </head>
 
-<body onload="antesDia15AssinaturaDisponivel()">
+<!-- 
+    mês de lançamento
+    body onload="antesDia15AssinaturaDisponivel()">
+ -->
+
+<body>
 
     <!-- BANNER DA MARCA JACARANDARA -->
     <div class="container-jacarandara" style="box-shadow: white; margin-top: 25px; display: flex; align-items: center; justify-content: center; width: 100%; color: white;">
@@ -554,13 +559,14 @@
             </div>
         </div>
 
+        <!--  Mes de lancamento vai ficar aberto
         <script>
             function antesDia15AssinaturaDisponivel() {
                 var cardsDisp = document.getElementsByClassName('div-cards')[0]
                 var cardsIndisp = document.getElementsByClassName('div-cards')[1]
                 var data = new Date()
 
-                if (data.getDate() <= 15) {
+                if (data.getDate() >= 10 && data.getDate() <= 15) {
                     cardsDisp.style.display = 'flex;';
                     cardsIndisp.style.display = 'none';
                 } else {
@@ -570,6 +576,7 @@
 
             }
         </script>
+        -->
 
 </body>
 
