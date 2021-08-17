@@ -207,12 +207,19 @@
             width: 200px;
         }
         
+        #bem-estar-natural {
+            display: none;
+        }
+        
         @media screen and (max-width: 800px) {
             .w3-ul,
             .w3-third {
                 margin: auto;
                 display: block;
                 width: 360px;
+            }
+            #bem-estar-natural {
+                display: flex;
             }
         }
         
@@ -247,6 +254,9 @@
             }
             #ul-li {
                 margin-right: 30px;
+            }
+            #bem-estar-natural {
+                display: flex;
             }
         }
     </style>
@@ -343,7 +353,7 @@
                     <i class="fas fa-ban 4x"></i>
                     <spam>Não Tóxico ou Sintético</spam>
                 </div>
-                <div class="circle">
+                <div class="circle" id="bem-estar-natural">
                     <i class="fas fa-hand-holding-heart 4x"></i>
                     <spam>Bem Estar<br>Natural</spam>
                 </div>
