@@ -21,254 +21,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <style>
-        /*Importando fonte Roboto do Google Fonts*/
-        
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            color: white;
-            background-color: white;
-            font-family: 'Roboto', sans-serif;
-            color: black;
-            font-size: 2rem;
-        }
-        
-        p {
-            color: black;
-            font-size: 1.2rem;
-            margin: 25px;
-            text-align: justify;
-            font-weight: 400;
-        }
-        
-        .p-destaque {
-            font-size: 1.7rem;
-            font-weight: 400;
-            text-align: center;
-        }
-        
-        .design-description {
-            max-width: 450px;
-            font-weight: 400;
-        }
-        
-        button {
-            border-radius: 5px;
-            display: block;
-            margin: 20px auto;
-            background-color: white;
-            border: 0;
-            color: rgb(0, 103, 34);
-            font-weight: bold;
-            cursor: pointer;
-            padding: 12px 20px;
-        }
-        
-        button:hover {
-            transform: scale(1.1);
-            text-decoration: underline;
-        }
-        
-        #title-descricao {
-            color: white;
-            margin-bottom: 25px;
-            font-size: 42px;
-        }
-        
-        .design {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 50px;
-            margin-top: 50px;
-        }
-        
-        .column {
-            float: left;
-            width: 33.3%;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        .container-description {
-            padding: 50px;
-        }
-        
-        #title {
-            font-size: 3rem;
-            font-weight: 400;
-            text-align: center;
-            margin-top: 60px;
-        }
-        
-        summary {
-            font-size: 20px;
-        }
-        
-        li {
-            color: black;
-            margin: 5px;
-            font-size: 1.2rem;
-            text-align: justify;
-            font-weight: 400;
-        }
-        
-        spam {
-            margin: 10px;
-            font-size: 1rem;
-            text-align: center;
-        }
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        
-        .missao-valores-container {
-            display: block;
-            margin: auto;
-        }
-        
-        .missao-e-valores {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        
-        .circle {
-            width: 140px;
-            height: 140px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: rgb(0, 103, 34);
-            color: #FFF;
-            border-radius: 120px;
-            font-size: 30px;
-            box-shadow: 10px 10px 25px rgb(100, 156, 92);
-            margin: 20px;
-        }
-        
-        .circle:hover {
-            transform: scale(1.05);
-        }
-        
-        .container {
-            background-color: rgb(241, 243, 241);
-            padding-bottom: 80px;
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 3px 10px 0 rgb(0 0 0 / 15%);
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        strong {
-            color: rgb(0, 103, 34);
-        }
-        
-        .div-cards {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-            margin: 0;
-        }
-        
-        .column {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        .row {
-            margin: auto;
-        }
-        
-        .w3-ul,
-        .w3-third {
-            margin: auto;
-            display: block;
-            width: 400px;
-        }
-        
-        button {
-            width: 200px;
-        }
-        
-        #bem-estar-natural {
-            display: none;
-        }
-        
-        @media screen and (max-width: 800px) {
-            .w3-ul,
-            .w3-third {
-                margin: auto;
-                display: block;
-                width: 360px;
-            }
-            #bem-estar-natural {
-                display: flex;
-            }
-        }
-        
-        @media screen and (max-width: 600px) {
-            .circle {
-                margin: 10px;
-            }
-            .missao-e-valores {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            h2 {
-                margin-top: 20px;
-            }
-            .column {
-                width: 100%;
-            }
-            #title-descricao {
-                font-size: 24px;
-            }
-            .container-description {
-                padding: 15px;
-            }
-            #title {
-                font-size: 24px;
-            }
-            summary {
-                font-size: 18px;
-            }
-            li {
-                margin-right: 25px;
-            }
-            #ul-li {
-                margin-right: 30px;
-            }
-            #bem-estar-natural {
-                display: flex;
-            }
-        }
-    </style>
-
+    <!-- CSS File Externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- 
-    mês de lançamento
-    body onload="antesDia15AssinaturaDisponivel()">
- -->
-
-<body>
+<body onload="AssinaturaDisponivel()">
 
     <!-- BANNER DA MARCA JACARANDARA -->
     <div class="container-jacarandara" style="box-shadow: white; margin-top: 25px; display: flex; align-items: center; justify-content: center; width: 100%; color: white;">
@@ -495,7 +252,7 @@
                 </div>
             </div>
 
-            <!-- 
+
             <div class="div-cards" id="indisponivel">
                 <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-center w3-hover-shadow">
@@ -510,9 +267,7 @@
                         </li>
                     </ul>
                 </div>
-                 -->
 
-            <!-- 
                 <div class="w3-third w3-margin-bottom">
                     <ul class="w3-ul w3-border w3-center w3-hover-shadow">
                         <li class=" w3-xlarge w3-padding-32 " style="background-color: rgb(103, 0, 0); text-align: center; color: white; margin-right: 5px;">Unidade
@@ -528,52 +283,51 @@
                 </div>
             </div>
         </div>
-         -->
-
-            <!-- FOOTER DESCRICAO -->
-            <div class="container-description " style="box-shadow: white; border-radius: 10px; width: 100%; text-align: center; background-color: rgb(0, 103, 34); padding: 50px; margin-top: 50px; ">
-                <h2 id="title " style="margin-bottom: 50px; color: white; margin-top: 0px; ">Dúvidas e Perguntas Frequentes</h2>
-                <div class="row " style="display: flex; flex: wrap; flex-direction: column; ">
-
-                    <details>
-                        <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
-                            COMO FUNCIONA O PAGAMENTO?</summary>
-                        <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">É uma assinatura mensal. Se cadastrando, o pagamento ocorre automaticamente todo mês entre o dia 1 e 10.
-                        </p>
-                    </details>
-                    <hr>
-                    <details>
-                        <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
-                            CANCELAMENTO DA ASSINATURA?</summary>
-                        <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">A assinatura pode ser cancelada quando você quiser, antes do dia 1 de cada mês em questão. É só mandar um email para gente que cancelamos sua assinatura e pagamento automático!</p>
-                    </details>
-                    <hr>
-                    <details>
-                        <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
-                            SOBRE A ASSINATURA?</summary>
-                        <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">
-                            Assinatura do Box Jacarandará é realizado através de um débito mensal. Podendo ser cancelado a qualquer momento.</p>
-                    </details>
-                    <hr>
-                    <details>
-                        <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
-                            COMO FUNCIONA O FRETE?</summary>
-                        <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">O frete de envio da caixa fica por nossa conta para qualquer cidade do Brasil.</p>
-                    </details>
-                    <hr>
-                    <details>
-                        <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
-                            PRAZO DE ENVIO?</summary>
-                        <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">Pedidos realizados a partir do dia 15 será enviado pelo método PAC Correios.</p>
-                    </details>
 
 
-                </div>
+        <!-- FOOTER DESCRICAO -->
+        <div class="container-description " style="box-shadow: white; border-radius: 10px; width: 100%; text-align: center; background-color: rgb(0, 103, 34); padding: 50px; margin-top: 50px; ">
+            <h2 id="title " style="margin-bottom: 50px; color: white; margin-top: 0px; ">Dúvidas e Perguntas Frequentes</h2>
+            <div class="row " style="display: flex; flex: wrap; flex-direction: column; ">
+
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        COMO FUNCIONA O PAGAMENTO?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">É uma assinatura mensal. Se cadastrando, o pagamento ocorre automaticamente todo mês entre o dia 1 e 10.
+                    </p>
+                </details>
+                <hr>
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        CANCELAMENTO DA ASSINATURA?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">A assinatura pode ser cancelada quando você quiser, antes do dia 1 de cada mês em questão. É só mandar um email para gente que cancelamos sua assinatura e pagamento automático!</p>
+                </details>
+                <hr>
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        SOBRE A ASSINATURA?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">
+                        Assinatura do Box Jacarandará é realizado através de um débito mensal. Podendo ser cancelado a qualquer momento.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        COMO FUNCIONA O FRETE?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">O frete de envio da caixa fica por nossa conta para qualquer cidade do Brasil.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary style="text-align: right; color: white; text-align: center; margin: 10px; font-weight: 400; ">
+                        PRAZO DE ENVIO?</summary>
+                    <p style="text-align: center; color: white; font-weight: 400; max-width: 600px; margin: auto; margin-bottom: 25px; ">Pedidos realizados a partir do dia 15 será enviado pelo método PAC Correios.</p>
+                </details>
+
+
             </div>
+        </div>
 
-            <!--  Mes de lancamento vai ficar aberto
         <script>
-            function antesDia15AssinaturaDisponivel() {
+            function AssinaturaDisponivel() {
                 var cardsDisp = document.getElementsByClassName('div-cards')[0]
                 var cardsIndisp = document.getElementsByClassName('div-cards')[1]
                 var data = new Date()
@@ -588,7 +342,6 @@
 
             }
         </script>
-        -->
 
 </body>
 
