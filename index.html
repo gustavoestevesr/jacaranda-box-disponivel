@@ -226,9 +226,9 @@
                             <p style="color: rgb(0,103,34); text-align: center; font: 22px; margin-bottom: 30px; ">Assinatura Caixa Jacarandá</p>
                             <h2 class="w3-wide " style="color: rgb(0,103,34); text-align: center; ">R$145</h2>
                             <p style="text-align: center; margin-top: 0 "><span class="w3-opacity " style="color: rgb(0,103,34); text-align: center; ">por mês</span></p>
-                            <a target="_blank " href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380847ac5c27d017b4c3131be6514"><button
+                            <a onclick="temConta('mercadopagoassinatura')"><button
                                 style="background-color: rgb(0, 79, 103); color: white; ">Mercado Pago</button></a>
-                            <a target="_blank " href="https://picpay.me/jacarandara"><button
+                            <a onclick="temConta('picpayassinatura')"><button
                                 style="background-color: rgb(0,103,34); color: white; ">PicPay</button></a>
                         </li>
                     </ul>
@@ -243,9 +243,9 @@
                             <p style="color: rgb(0,103,34); text-align: center; font: 22px; margin-bottom: 30px; ">Unidade Caixa Jacarandá</p>
                             <h2 class="w3-wide " style="color: rgb(0,103,34); text-align: center; ">R$145</h2>
                             <p style="text-align: center; margin-top: 0 "><span class="w3-opacity " style="color: rgb(0,103,34); text-align: center; ">por unidade</span></p>
-                            <a target="_blank " href="https://www.jacarandara.com.br/caixa-de-produtos-jacaranda"><button
+                            <a onclick="temConta('mercadopagounidade')"><button
                                 style="background-color: rgb(0, 79, 103); color: white; ">Mercado Pago</button></a>
-                            <a target="_blank " href="https://picpay.me/barbara.jacaranda"><button
+                            <a onclick="temConta('picpayunidade')"><button
                                     style="background-color: rgb(0,103,34); color: white; ">PicPay</button></a>
                         </li>
                     </ul>
@@ -339,7 +339,23 @@
                     cardsDisp.style.display = 'none';
                     cardsIndisp.style.display = 'flex;';
                 }
+            }
 
+            function temConta(link) {
+                resposta = confirm("Você deseja criar uma conta no site?")
+                if (resposta) {
+                    window.open('https://jacarandara.lojaintegrada.com.br/conta/login');
+                } else {
+                    if (link == 'picpayunidade') {
+                        window.open('https://picpay.me/barbara.jacaranda', '_blank');
+                    } else if (link == 'mercadopagounidade') {
+                        window.open('https://www.jacarandara.com.br/caixa-de-produtos-jacaranda', '_blank');
+                    } else if (link == 'mercadopagoassinatura') {
+                        window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380847ac5c27d017b4c3131be6514', '_blank');
+                    } else if (link == 'picpayassinatura') {
+                        window.open('https://picpay.me/jacarandara', '_blank');
+                    }
+                }
             }
         </script>
 
